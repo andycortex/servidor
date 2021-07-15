@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 const meals = require('./routes/meals')
 const orders = require('./routes/orders')
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, })
 
 app.use('/meals', meals)
 app.use('/orders', orders)
