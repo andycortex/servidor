@@ -7,6 +7,6 @@
         {  "src": "(.*)", "dest": "index.js" }
     ],
     "env": {
-        "MONGODB_URI": "@mongobd-uri"
+        "MONGODB_URI": "mongodb+srv://almuerzimaster:ZGpkaHv3NxAj5pa@almuerzi-db.annco.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     }
 }
