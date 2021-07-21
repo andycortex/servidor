@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 const Users = require('../models/Users')
 
 const isAuthenticated = (req, res, next) => {
-    const token = req.headers.autorization
+    const token = req.headers.authorization
     if (!token) {
         return res.sendStatus(403)
     }
